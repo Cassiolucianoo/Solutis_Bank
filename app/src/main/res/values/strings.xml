@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="ERROR_UNEXPECTED">Um erro inesperado ocorreu. Tente novamente mais tarde.</string>
+    <string name="ERROR_LOAD_TASK">Erro ao carregar a tarefa.</string>
+    <string name="ERROR_INTERNET_CONNECTION">Conexão à internet necessária para uso da applicação.</string>
+
+
+
+    <string name="app_name">Teste Solutis</string>
+    <string name="text_ex">Cassio luciano da silva</string>
+    <string name="cpf_ex">366.365.552.05</string>
+    <string name="saldo_text">Saldo</string>
+    <string name="saldo_ex">R$ 1.999,00</string>
+    <string name="erroatualizarextrato">Extrato não foi atualizado</string>
+    <string name="errointernet">\"Verifique sua internet \"</string>
+    <string name="errologin">Falha no login / verifique sua rede</string>
+    <string name="invalid_password">"Senhas validas minimo 5 caracteres"</string>
+    <string name="invalid_user">"Informe usuario de acesso"</string>
+    <string name="new_access">Você está fazendo o primeiro acesso</string>
+
+
+    <string name="fp_titulo">Autenticação</string>
+    <string name="fp_subtitulo">Verificação biométrica</string>
+    <string name="fp_descricao">Use sua digital para fazer o login</string>
+    <string name="fp_cancelar">Agora não</string>
+
+</resources>
