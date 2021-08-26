@@ -51,10 +51,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
                 override fun onSuccess(model: LoginModel) {
                     mSecurityPreferences.store(StatmentsConstants.USER.USER_NAME, model.name)
                     mSecurityPreferences.store(StatmentsConstants.USER.USER_CPF, model.cpf)
-                    mSecurityPreferences.store(
-                        StatmentsConstants.USER.USER_BALANCE,
-                        model.balance.toString()
-                    )
+                    mSecurityPreferences.store(StatmentsConstants.USER.USER_BALANCE, model.balance.toString())
                     mSecurityPreferences.store(StatmentsConstants.USER.USER_TOKEN, model.token)
                     mSecurityPreferences.store(StatmentsConstants.SHARED.USER_LOGIN, user)
 
@@ -76,7 +73,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun cacheLogin() {
-         mLastLogin.value = mSecurityPreferences.get(StatmentsConstants.SHARED.USER_LOGIN)
+        mLastLogin.value = mSecurityPreferences.get(StatmentsConstants.SHARED.USER_LOGIN)
     }
 }
 

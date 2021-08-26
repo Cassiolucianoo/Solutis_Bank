@@ -13,7 +13,6 @@ import com.cassiolucianodasilva.solutisbank.R
 import com.cassiolucianodasilva.solutisbank.service.constants.StatmentsConstants
 import com.cassiolucianodasilva.solutisbank.view.adapter.StatmentAdapter
 import com.cassiolucianodasilva.solutisbank.viewModel.StatmentViewModel
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.header_list_card.*
 
 
@@ -22,7 +21,6 @@ class StatmentActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var mViewModel: StatmentViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_statment)

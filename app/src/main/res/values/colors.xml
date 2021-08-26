@@ -11,5 +11,8 @@
     <color name="colorClear">#A8B4C4</color>
     <color name="colorText">#485465</color>
     <color name="colorSaldo">#2BC808</color>
+    <color name="Splash">#0E7DC1</color>
+    <color name="red">#C30000</color>
+
 
 </resources>

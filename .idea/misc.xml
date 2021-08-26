@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/activity_login.xml" value="0.30932971014492755" />
+        <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/drawable/bills_bg.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/activity_splash.xml" value="0.378125" />
         <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/activity_statment.xml" value="0.2" />
         <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/card_bills.xml" value="0.378125" />
         <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/header_list_card.xml" value="0.378125" />
         <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/loading_item.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Cassio/Documents/GitHub/Solutis_Bank/app/src/main/res/layout/progress.xml" value="0.24947916666666667" />
       </map>
     </option>
   </component>

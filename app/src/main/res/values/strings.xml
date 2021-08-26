@@ -23,5 +23,6 @@
     <string name="fp_subtitulo">Verificação biométrica</string>
     <string name="fp_descricao">Use sua digital para fazer o login</string>
     <string name="fp_cancelar">Agora não</string>
+    <string name="email_ou_senha_inv_lidos">Email ou senha inválidos</string>
 
 </resources>

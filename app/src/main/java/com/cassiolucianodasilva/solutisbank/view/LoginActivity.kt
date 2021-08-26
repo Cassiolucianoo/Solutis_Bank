@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         progress.visibility = View.GONE
         buttonLogin.setOnClickListener(this)
 
-
+        alertLogin.setVisibility(View.INVISIBLE);
         cacheLogin()
 
         observe()
@@ -51,6 +51,22 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+
+
+    /**
+     * Autentica usuário
+     */
+    private fun handleLogin() {
+        val user = editUser.text.toString()
+        val password = editPassword.text.toString()
+
+        mViewModel.doLogin(user, password)
+
+        progress.visibility = View.GONE
+
+    }
+
+
     /**
      * TODO
      *Observa ViewModel
@@ -65,10 +81,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             } else {
 
                 if (editUser.getText().toString().trim().equals("")) {
-                    editUser.setHintTextColor(Color.parseColor("#AAC30000"))
-                    editUser.setTextColor(Color.parseColor("#AAC30000"))
-                    editUser.setHint("*User")
-                    
+                    editUser.setHintTextColor(Color.parseColor("#C30000"))
+                    editUser.setTextColor(Color.parseColor("#C30000"))
+                    editUser.setHint("User")
+
                 } else {
 
                     editUser.setHintTextColor(Color.parseColor("#485465"))
@@ -77,9 +93,9 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
                 }
                 if (editPassword.getText().toString().trim().equals("")) {
-                    editPassword.setHintTextColor(Color.parseColor("#AAC30000"))
-                    editPassword.setTextColor(Color.parseColor("#AAC30000"))
-                    editPassword.setHint("*Password")
+                    editPassword.setHintTextColor(Color.parseColor("#C30000"))
+                    editPassword.setTextColor(Color.parseColor("#C30000"))
+                    editPassword.setHint("Password")
 
                 } else {
                     editPassword.setHintTextColor(Color.parseColor("#485465"))
@@ -87,6 +103,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     editPassword.setHint("Password")
 
                 }
+                alertLogin.setVisibility(View.VISIBLE);
                 Toast.makeText(applicationContext, it.failure(), Toast.LENGTH_SHORT).show()
                 progress.visibility = View.GONE
             }
@@ -102,19 +119,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         })
     }
 
-
-    /**
-     * Autentica usuário
-     */
-    private fun handleLogin() {
-        val user = editUser.text.toString()
-        val password = editPassword.text.toString()
-
-        mViewModel.doLogin(user, password)
-
-        progress.visibility = View.GONE
-
-    }
 
 
 }

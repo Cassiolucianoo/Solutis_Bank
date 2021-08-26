@@ -35,6 +35,7 @@ class StatmentAdapter() : RecyclerView.Adapter<StatmentAdapter.StatmentHolder>()
         return StatmentHolder(statmentView)
     }
 
+
     /**
      *chama esse método para associar um ViewHolder aos dados.
      * O método busca os dados apropriados e usa esses dados para preencher o layout do fixador de visualização.
@@ -57,6 +58,7 @@ class StatmentAdapter() : RecyclerView.Adapter<StatmentAdapter.StatmentHolder>()
     fun updateStatment(list: List<StatmentModel>) {
         mStatment = list
         notifyDataSetChanged()
+
     }
 
     /**
@@ -66,7 +68,7 @@ class StatmentAdapter() : RecyclerView.Adapter<StatmentAdapter.StatmentHolder>()
      *
      * @param itemView
      */
-    inner class StatmentHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class StatmentHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 
         fun bindingData(statment: StatmentModel) {
@@ -94,9 +96,11 @@ class StatmentAdapter() : RecyclerView.Adapter<StatmentAdapter.StatmentHolder>()
             return if ((!showSymbol) and (value > 0)) {
                 "R$" + numberFormat.format(value).replace(symbol, "")
             } else {
+
                 itemView.title_pagamento.text = "Pagamento"
                 itemView.card_value.setTextColor(Color.parseColor("#F60404"))
                 numberFormat.format(value)
+
             }
         }
 
